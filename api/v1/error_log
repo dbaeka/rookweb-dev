@@ -1,0 +1,111 @@
+[22-Aug-2018 22:50:12 Africa/Accra] PHP Fatal error:  Call to undefined method Validate::app_signup() in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 843
+[22-Aug-2018 23:40:16 Africa/Accra] PHP Fatal error:  Call to undefined method Validate::app_signup() in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 843
+[22-Aug-2018 23:46:43 Africa/Accra] PHP Notice:  Undefined offset: 2 in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 846
+[23-Aug-2018 00:02:44 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2133
+[23-Aug-2018 01:12:45 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2133
+[24-Aug-2018 09:00:58 Africa/Accra] PHP Notice:  Undefined variable: user in /home/myrooker/public_html/app/task.php on line 273
+[09-Sep-2018 20:34:03 Africa/Accra] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/myrooker/public_html/app/app_company.php on line 17
+[09-Sep-2018 20:34:15 Africa/Accra] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/myrooker/public_html/app/app_company.php on line 17
+[09-Sep-2018 20:34:34 Africa/Accra] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/myrooker/public_html/app/app_company.php on line 17
+[09-Sep-2018 21:03:56 Africa/Accra] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/myrooker/public_html/app/app_company.php on line 17
+[09-Sep-2018 21:04:14 Africa/Accra] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/myrooker/public_html/app/app_company.php on line 18
+[13-Sep-2018 22:29:12 Africa/Accra] PHP Notice:  Undefined variable: data in /home/myrooker/public_html/app/app_student.php on line 91
+[13-Sep-2018 23:25:48 Africa/Accra] PHP Notice:  Undefined variable: data in /home/myrooker/public_html/app/app_student.php on line 91
+[13-Sep-2018 23:25:48 Africa/Accra] PHP Warning:  file_put_contents(img/avatar/rookie599b9e5ff4.png): failed to open stream: No such file or directory in /home/myrooker/public_html/app/app_student.php on line 91
+[13-Sep-2018 23:32:06 Africa/Accra] PHP Notice:  Undefined variable: data in /home/myrooker/public_html/app/app_student.php on line 91
+[13-Sep-2018 23:32:06 Africa/Accra] PHP Warning:  file_put_contents(img/avatar/rookie63bc632340.png): failed to open stream: No such file or directory in /home/myrooker/public_html/app/app_student.php on line 91
+[13-Sep-2018 23:36:43 Africa/Accra] PHP Warning:  unlink(../img/avatar/rookie63bc632340.png): No such file or directory in /home/myrooker/public_html/app/app_student.php on line 86
+[14-Sep-2018 00:11:34 Africa/Accra] PHP Warning:  file_put_contents(img/avatar/rookied63f99d4d8.png): failed to open stream: No such file or directory in /home/myrooker/public_html/app/app_student.php on line 91
+[14-Sep-2018 00:41:55 Africa/Accra] PHP Warning:  unlink(../img/avatar/rookied63f99d4d8.png): No such file or directory in /home/myrooker/public_html/app/app_student.php on line 86
+[14-Sep-2018 00:45:35 Africa/Accra] PHP Warning:  unlink(img/avatar/rookie2ddf6a65a0.png): No such file or directory in /home/myrooker/public_html/app/app_student.php on line 86
+[14-Sep-2018 00:45:35 Africa/Accra] PHP Warning:  file_put_contents(img/avatar/rookie8ef1d138c1.png): failed to open stream: No such file or directory in /home/myrooker/public_html/app/app_student.php on line 91
+[14-Sep-2018 18:08:22 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2392
+[17-Sep-2018 19:25:16 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2517
+[24-Sep-2018 20:46:46 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2517
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 14:08:29 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 18:22:25 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 521
+[12-Oct-2018 18:22:25 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 522
+[12-Oct-2018 18:22:25 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 523
+[12-Oct-2018 18:24:01 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 521
+[12-Oct-2018 18:24:01 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 522
+[12-Oct-2018 18:24:01 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 523
+[12-Oct-2018 18:28:01 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 521
+[12-Oct-2018 18:28:01 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 522
+[12-Oct-2018 18:28:01 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 523
+[12-Oct-2018 18:28:23 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 521
+[12-Oct-2018 18:28:23 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 522
+[12-Oct-2018 18:28:23 Africa/Accra] PHP Notice:  Undefined index: solution in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 523
+[12-Oct-2018 23:08:57 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:08:57 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:08:57 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:08:57 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:24 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:25 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:29 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:09:31 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:09:31 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:09:31 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:09:31 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:11:42 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:11:43 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[12-Oct-2018 23:18:27 Africa/Accra] PHP Warning:  Illegal string offset 'speed' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 116
+[12-Oct-2018 23:18:27 Africa/Accra] PHP Warning:  Illegal string offset 'rate' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 117
+[12-Oct-2018 23:18:27 Africa/Accra] PHP Warning:  Illegal string offset 'initiative' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 118
+[12-Oct-2018 23:18:27 Africa/Accra] PHP Warning:  Illegal string offset 'execute' in /home/myrooker/public_html/api/ios_api_delmwin97.php on line 119
+[16-Oct-2018 12:19:53 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2517
+[29-Oct-2018 14:06:23 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2517
+[15-Jan-2019 14:29:46 Africa/Accra] PHP Notice:  Array to string conversion in /home/myrooker/public_html/app/user_iOS.php on line 2517

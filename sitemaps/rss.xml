@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<rss version="2.0">
+  <channel>
+    <title>Rook+ | Home</title>
+    <link>https://myrookery.com</link>
+    <description />
+    <item>
+      <guid>https://myrookery.com/</guid>
+      <title>Rook+ | Home</title>
+      <link>https://myrookery.com/</link>
+      <description>Rook+</description>
+    </item>
+    <item>
+      <guid>https://myrookery.com/home</guid>
+      <title>Rook+ | Home</title>
+      <link>https://myrookery.com/home</link>
+      <description>Rook+</description>
+    </item>
+    <item>
+      <guid>https://myrookery.com/login</guid>
+      <title>Rook+ | Login</title>
+      <link>https://myrookery.com/login</link>
+      <description>Rook+</description>
+    </item>
+    <item>
+      <guid>https://myrookery.com/forgot_password</guid>
+      <title>Rook+ | Forgot Password</title>
+      <link>https://myrookery.com/forgot_password</link>
+      <description>Rook+</description>
+    </item>
+    <item>
+      <guid>https://myrookery.com/register</guid>
+      <title>Rook+ | Register</title>
+      <link>https://myrookery.com/register</link>
+      <description>Rook+</description>
+    </item>
+    <item>
+      <guid>https://myrookery.com/terms</guid>
+      <title>Rook+ | Terms and Conditions</title>
+      <link>https://myrookery.com/terms</link>
+      <description>Rook+</description>
+    </item>
+  </channel>
+</rss>
+<!--<guid value="f3f56903-1503-4e5e-9b15-a3d30a203a9f" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->

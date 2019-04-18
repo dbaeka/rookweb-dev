@@ -1,0 +1,15 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+RewriteRule ^home?$ index.php
+RewriteRule ^home?$ index
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+#ErrorDocument 404 http://localhost/rook/404
+ErrorDocument 404 https://rookweb.herokuapp.com/404
+

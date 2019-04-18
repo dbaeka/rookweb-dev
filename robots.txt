@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /sitemaps/sitemap.htm
+Sitemap: https://myrookery.com/sitemaps/sitemap.xml
