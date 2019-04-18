@@ -44,7 +44,7 @@ if($jwt){
                 "errorCode" => null,
                 "result" => array(
                     "companies" => $data,
-                    "count" =>
+                    "count" => count($data)
                 )
             )
         );
@@ -77,4 +77,3 @@ if($jwt){
     http_response_code(401);
     echo json_encode(array("message" => "Access denied."));
 }
-//?>
