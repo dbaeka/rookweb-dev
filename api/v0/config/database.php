@@ -11,16 +11,26 @@ class Database {
     private $db_name;
     private $username;
     private $password;
+    private $environment;
 
     public $conn;
 
     public function __construct()
     {
-        $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $this->host = $cleardb_url["host"];
-        $this->db_name = substr($cleardb_url["path"],1);
-        $this->username = $cleardb_url["user"];
-        $this->password = $cleardb_url["pass"];
+
+        $this->environment = getenv("RUN_ENVIRONMENT");
+        if ($this->environment == "DEVELOPMENT"){
+            $this->host = "localhost:3306";
+            $this->db_name = "myrooker_db";
+            $this->username = "myrooker_master";
+            $this->password = "rookMasterdb7";
+        } else {
+            $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+            $this->host = $cleardb_url["host"];
+            $this->db_name = substr($cleardb_url["path"], 1);
+            $this->username = $cleardb_url["user"];
+            $this->password = $cleardb_url["pass"];
+        }
     }
 
     public function getConnection(){
