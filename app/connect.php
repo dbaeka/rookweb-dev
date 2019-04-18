@@ -8,12 +8,22 @@ $baseUrl = 'https://rookweb.herokuapp.com';
 $cp_key = 'E8C48D4BBAC8FDC0484E58E579EB74C3';
 $fb_key = 'AAAArQP7pdg:APA91bERJRgVaS0ELjLuOx5Gt4p94Ky9Pikw5UcigRe0I-IXQvUiExX7C8zuMcW0z0BRg2Ic_7-NjiBZ_wxc-fnkKfErgThM7oSZEJIbmNVTsX6cobQHSDkVaPVaVHgqzeSQFgDaubhc';
 
+$database = array();
+$environment = getenv("RUN_ENVIRONMENT");
+
+if ($environment == "DEVELOPMENT"){
+    $database["host"] = "localhost:3306";
+    $database["username"] = "myrooker_master";
+    $database["password"] = "rookMasterdb7";
+    $database["db_name"] =  "myrooker_db";
+} else {
 //Get Heroku ClearDB connection information
-$cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server   = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db       = substr($cleardb_url["path"],1);
+    $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $database["host"] =  $cleardb_url["host"];
+    $database["username"] = $cleardb_url["user"];
+    $database["password"] = $cleardb_url["pass"];
+    $database["db_name"] =  substr($cleardb_url["path"], 1);
+}
 
 $help = '<script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -27,7 +37,7 @@ $help = '<script type="text/javascript">
         })();
         </script>';
 
-$link = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+$link = mysqli_connect($database["host"], $database["username"], $database["password"], $database["db_name"]);
 if (!$link) {
 	die(header('location: 500'));
     // die('Could not connect: '.mysql_error());
