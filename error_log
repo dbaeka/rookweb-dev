@@ -1,0 +1,39 @@
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:44 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[24-Aug-2018 15:08:50 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:50 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:50 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[24-Aug-2018 15:08:54 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:54 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:54 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[24-Aug-2018 15:08:54 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:54 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:54 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[24-Aug-2018 15:08:59 Africa/Accra] PHP Warning:  Illegal string offset 'title' in /home/myrooker/public_html/app/company.php on line 1594
+[24-Aug-2018 15:08:59 Africa/Accra] PHP Warning:  Illegal string offset 'body' in /home/myrooker/public_html/app/company.php on line 1595
+[24-Aug-2018 15:08:59 Africa/Accra] PHP Warning:  Illegal string offset 'click_action' in /home/myrooker/public_html/app/company.php on line 1596
+[16-Sep-2018 10:27:27 Africa/Accra] PHP Warning:  file_get_contents(https://apps.mnotify.net/smsapi?key=36c31907b1138f201022&amp;to=233506208814&amp;msg=Activation Code: 77178&amp;sender_id=Rook+): failed to open stream: HTTP request failed!  in /home/myrooker/public_html/app/validate.php on line 441
+[18-Mar-2019 18:55:28 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:56:21 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:56:27 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:56:29 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:58:20 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:58:22 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:58:49 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:59:31 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:59:36 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 18:59:37 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 19:00:42 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 19:00:43 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 19:03:34 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
+[18-Mar-2019 19:03:35 Africa/Accra] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'myrooker_devel'@'localhost' (using password: YES) in /home/myrooker/public_html/myrookery.com/development/app/connect.php on line 23
