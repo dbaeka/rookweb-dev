@@ -5,7 +5,8 @@
     "monolog/monolog": "^1.22",
     "twig/twig": "^2.0",
     "symfony/twig-bridge": "^3",
-    "ext-mysqli": "*"
+    "ext-mysqli": "*",
+    "ext-json": "*"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
