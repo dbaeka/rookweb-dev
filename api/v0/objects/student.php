@@ -25,6 +25,7 @@ class Student
     private $conn;
     private $table_name = "students";
     private $table_user = "appusers";
+    private $base_url = "https://rookweb.herokuapp.com";
 
     public function __construct($db)
     {
@@ -327,9 +328,9 @@ class Student
     {
         $userid = $this->getUserID();
         $userid = $this->clean($userid);
-        $query = "SELECT DISTINCT company.cname, company.type, company.location, company.bio, company.logo, 
-                  (1-ISNULL(subscribe.sbid)) as subscribed FROM company LEFT JOIN subscribe ON company.cid=subscribe.cid
-                   AND subscribe.stid=" . $userid . " WHERE company.active='1' ORDER BY company.cname ASC";
+        $query = "SELECT DISTINCT company.cname, company.type, company.location, company.bio, concat('" . $this->base_url .
+            "','/img/avatar/',company.logo) as logo, (1-ISNULL(subscribe.sbid)) as subscribed FROM company LEFT JOIN subscribe 
+            ON company.cid=subscribe.cid AND subscribe.stid=" . $userid . " WHERE company.active='1' ORDER BY company.cname ASC";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
