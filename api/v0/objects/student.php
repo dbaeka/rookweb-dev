@@ -168,10 +168,9 @@ class Student
 
     private function getUserID()
     {
-        $query = "SELECT userid FROM " . $this->table_user . " WHERE apid = ?";
-        $stmt = $this->conn->prepare($query);
         $this->apid = $this->clean($this->apid);
-        $stmt->bindParam(1, $this->apid);
+        $query = "SELECT userid FROM " . $this->table_user . " WHERE apid=782"; //. $this->apid;
+        $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC)["userid"];
     }
@@ -327,6 +326,7 @@ class Student
     public function getCompaniesList()
     {
         $userid = $this->getUserID();
+        echo $userid;
         $userid = $this->clean($userid);
         $query = "SELECT DISTINCT company.cname, company.type, company.location, company.bio, concat('" . $this->base_url .
             "','/img/avatar/',company.logo) as logo, (1-ISNULL(subscribe.sbid)) as subscribed FROM company LEFT JOIN subscribe 
