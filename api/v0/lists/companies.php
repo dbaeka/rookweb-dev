@@ -138,7 +138,7 @@ if($jwt){
     echo json_encode(
         array(
             "success" => false,
-            "errorMessage" => "Access Denied",
+            "errorMessage" => "No jwt in header",
             "errorCode" => "JWT_INVALID",
             "result" => null
         )
