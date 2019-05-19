@@ -1,0 +1,240 @@
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Poppins-Light/Poppins-Light.eot) format("embedded-opentype"), url(../fonts/Poppins-Light/Poppins-Light.woff) format("woff"), url(../fonts/Poppins-Light/Poppins-Light.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Poppins-Regular/Poppins-Regular.eot) format("embedded-opentype"), url(../fonts/Poppins-Regular/Poppins-Regular.woff) format("woff"), url(../fonts/Poppins-Regular/Poppins-Regular.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Poppins-Medium/Poppins-Medium.eot) format("embedded-opentype"), url(../fonts/Poppins-Medium/Poppins-Medium.woff) format("woff"), url(../fonts/Poppins-Medium/Poppins-Medium.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Poppins-Bold/Poppins-Bold.eot) format("embedded-opentype"), url(../fonts/Poppins-Bold/Poppins-Bold.woff) format("woff"), url(../fonts/Poppins-Bold/Poppins-Bold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/Poppins-ExtraBold/Poppins-ExtraBold.eot) format("embedded-opentype"), url(../fonts/Poppins-ExtraBold/Poppins-ExtraBold.woff) format("woff"), url(../fonts/Poppins-ExtraBold/Poppins-ExtraBold.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: LibreBaskerville;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/LibreBaskerville-Italic/LibreBaskerville-Italic.eot) format("embedded-opentype"), url(../fonts/LibreBaskerville-Italic/LibreBaskerville-Italic.woff) format("woff"), url(../fonts/LibreBaskerville-Italic/LibreBaskerville-Italic.ttf) format("truetype")
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .intro-content {
+        min-height: 654px
+    }
+}
+
+.headline {
+    position: relative;
+    width: 100%;
+    padding: 0 10%
+}
+
+@media only screen and (min-width: 1024px) {
+    .headline {
+        position: relative;
+        left: 0;
+        top: 50%;
+        bottom: auto;
+        webkit-transform: translateY(75%);
+        -moz-transform: translateY(75%);
+        -ms-transform: translateY(75%);
+        transform: translateY(75%)
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .headline {
+        padding: 0 6.4rem
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .headline {
+        padding: 0 8rem
+    }
+}
+
+.txt-light {
+    color: #fff
+}
+
+h1 {
+    display: inline-block;
+    position: relative;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1;
+    color: #262626;
+    margin: 2.4rem 0
+}
+
+h1::before {
+    height: 100%
+}
+
+h1.light-text {
+    color: #fff
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 7rem
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    h1 {
+        font-size: 11rem;
+        margin-bottom: 3.2rem
+    }
+}
+
+
+
+.body-counter {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: #262626
+}
+
+h1 span {
+    color: #fd625e
+}
+
+h1.light-text {
+    color: #fff
+}
+
+.btn-count {
+    position: relative;
+    display: inline-block;
+    border: none;
+    outline: 0;
+    padding: 0;
+    font: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    -webkit-transition: padding .5s cubic-bezier(.26, .82, .76, 1.06);
+    -o-transition: padding .5s cubic-bezier(.26, .82, .76, 1.06);
+    -moz-transition: padding .5s cubic-bezier(.26, .82, .76, 1.06);
+    transition: padding .5s cubic-bezier(.26, .82, .76, 1.06)
+}
+
+.btn-count::after, .btn-count::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%
+}
+
+.btn-count::before {
+    left: -100%;
+    -webkit-transition: left .6s;
+    -o-transition: left .6s;
+    -moz-transition: left .6s;
+    transition: left .6s
+}
+
+.btn-count::after {
+    right: 0;
+    -webkit-transition: right .6s;
+    -o-transition: right .6s;
+    -moz-transition: right .6s;
+    transition: right .6s
+}
+
+.no-touch .btn-count:hover::before {
+    left: 0
+}
+
+.no-touch .btn-count:hover::after {
+    right: -100%
+}
+
+.btn-l-count {
+    height: 52px;
+    line-height: 50px;
+    padding: 0 5.6rem 0 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 700
+}
+
+.btn-l-count::after, .btn-l-count::before {
+    width: 4rem;
+    height: 2px
+}
+
+.no-touch .btn-l-count:hover {
+    padding: 0 2.4rem 0 5.6rem
+}
+
+@media only screen and (min-width: 1200px) {
+    .btn-l-count {
+        font-size: 1.4rem;
+        padding: 0 6rem 0 2.4rem
+    }
+
+    .btn-l-count::after, .btn-l-count::before {
+        width: 4rem
+    }
+
+    .no-touch .btn-l-count:hover {
+        padding: 0 2.4rem 0 6rem
+    }
+}
+
+.btn-light {
+    color: #303030;
+    background-color: #fff
+}
+
+.btn-light::after, .btn-light::before {
+    background-color: #303030
+}
+
+.btn-light-outline-1 {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff
+}
+
+.btn-light-outline-1::after, .btn-light-outline-1::before {
+    background-color: #fff
+}
+
+

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56625856-4296-437a-95b4-c0ced992feab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db_data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devel_db_.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devel_db_admins.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/devel_db_admins.sql.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updated_tables-1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/updated_tables-2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="56625856-4296-437a-95b4-c0ced992feab" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +264,7 @@
       <workItem from="1555595378949" duration="4852000" />
       <workItem from="1555658720043" duration="706000" />
       <workItem from="1555785755731" duration="3234000" />
-      <workItem from="1558294279558" duration="4380000" />
+      <workItem from="1558294279558" duration="4435000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1555595545109</created>
@@ -332,17 +322,23 @@
       <option name="project" value="LOCAL" />
       <updated>1558296163260</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated db">
+      <created>1558299497681</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558299497681</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13172000" />
+    <option name="totallyTimeSpent" value="13227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="28" width="2149" height="1255" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2130992" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2130992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,7 +353,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5002373" side_tool="true" weight="0.32932073" />
-      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.32932073" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="12" visible="true" weight="0.32932073" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -373,7 +369,8 @@
     <MESSAGE value="update apidoc" />
     <MESSAGE value="update composer, company list api" />
     <MESSAGE value="update apidoc, company list api" />
-    <option name="LAST_COMMIT_MESSAGE" value="update apidoc, company list api" />
+    <MESSAGE value="updated db" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated db" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
