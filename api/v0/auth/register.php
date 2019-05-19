@@ -37,7 +37,7 @@
  *      "dateOfBirth": "20 Februaru 1997",
  *      "phone": "233501234567"
  *  }
- * *
+ *
  * @apiSuccess {Boolean} success=true Shows if request was successful or not
  * @apiSuccess {String} errorMessage Contains the error message generated
  * @apiSuccess {String} errorCode Programmable defined error messages

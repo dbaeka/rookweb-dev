@@ -413,6 +413,8 @@ h6 { font-size:18px; line-height:23px}
 .bg-dark-brown { background: #7d6548;}
 .bg-very-light-brown { background: #eee3d6;}
 .bg-rook { background: #07274f; }
+.bg-rook-blue { background: #004aef; }
+.bg-rook-orange { background: #ff5500; }
 
 /* rgb background color */
 .bg-cyan-rgba { background-color: rgba(49, 201, 155, 0.9);}
