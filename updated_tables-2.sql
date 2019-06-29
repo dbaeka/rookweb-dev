@@ -1,3 +1,4 @@
+USE devel_db
 create table if not exists article_logs
 (
     id int auto_increment,

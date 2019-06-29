@@ -1,3 +1,4 @@
+USE devel_db
 create table admins
 (
     aid    int auto_increment

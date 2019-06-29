@@ -421,6 +421,67 @@ class Student
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function getArticlesList()
+    {
+        $query = "SELECT articles.id, articles.views, articles.link, articles.title, articles.timepost, company.cname, concat('" . $this->base_url .
+            "','/img/avatar/',company.logo) as logo, categories.title as category FROM articles INNER JOIN company
+                ON company.cid = articles.company_id INNER JOIN categories ON categories.id = articles.category_id
+WHERE company.active = '1' ORDER BY articles.timepost DESC ";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getDiscoverList()
+    {
+        $query = "SELECT discover.id, concat('" . $this->base_url .
+            "','/img/discover/',discover.image_url) as image_url, discover.type, discover.target_id FROM discover
+ORDER BY discover.timepost DESC ";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getEventsList()
+    {
+        $query = "SELECT events.id, events.image, events.price, events.title, events.timepost, events.location, events.event_date, events.details, company.cname, concat('" . $this->base_url .
+            "','/img/avatar/',company.logo) as logo, categories.title as category FROM events INNER JOIN company
+                ON company.cid = events.company_id INNER JOIN categories ON categories.id = events.category_id
+WHERE company.active = '1' ORDER BY events.timepost DESC ";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function getPollsList()
+    {
+        $query = "SELECT polls.id, json_unquote(polls.options) as options, polls.title, polls.timepost, company.cname, concat('" . $this->base_url .
+            "','/img/avatar/',company.logo) as logo FROM polls INNER JOIN company
+   ON company.cid = polls.company_id WHERE company.active = '1' AND polls.status = '1' ORDER BY polls.timepost DESC";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($data as &$item){
+            $query = "SELECT result as 'option', count(*) as count FROM poll_results WHERE poll_id = " . $item["id"] . " GROUP BY result";
+            $stmt = $this->conn->prepare($query);
+            $stmt->execute();
+            $item["result"] = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $data;
+    }
+
+    public function getVideosList()
+    {
+        $query = "SELECT videos.id, videos.views, videos.link, videos.title, videos.timepost, company.cname, concat('" . $this->base_url .
+            "','/img/avatar/',company.logo) as logo, categories.title as category FROM videos INNER JOIN company
+         ON company.cid = videos.company_id INNER JOIN categories ON categories.id = videos.category_id
+WHERE company.active = '1' ORDER BY videos.timepost DESC";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
     public function getRecommendedInternships()
     {
         $userid = $this->getUserID();

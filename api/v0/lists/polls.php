@@ -8,14 +8,13 @@
 
 
 /**
- * @api {get} /lists/companies ListAllCompanies
+ * @api {get} /lists/polls ListAllPolls
  * @apiVersion 0.0.1
- * @apiName ListAllCompanies
- * @apiGroup Lists
+ * @apiName ListAllPolls
+ * @apiGroup Lists Home
  * @apiPermission none
  *
- * @apiDescription Returns the companies on the platform and the short details to populate a list. Also contains if user
- * is subscribed to the company
+ * @apiDescription Returns the polls to populate the Home section
  *
  * @apiHeader {String} x-ROOK-token User's unique jwt sent from client
  *
@@ -23,15 +22,17 @@
  * @apiSuccess {String} errorMessage Contains the error message generated
  * @apiSuccess {String} errorCode Programmable defined error messages
  * @apiSuccess {Object[]} result List of Request Output for User
- * @apiSuccess {Object[]} result.companies List of companies
- * @apiSuccess {String} result.companies.cname Company name
- * @apiSuccess {String} result.companies.type Company name
- * @apiSuccess {String} result.companies.location Company location address
- * @apiSuccess {String} result.companies.cid Company id
- * @apiSuccess {String} result.companies.bio Company short bio
- * @apiSuccess {String} result.companies.logo Company logo url
- * @apiSuccess {String="1", "0"} result.companies.subscribed Company name
- * @apiSuccess {Number} result.count Number of companies
+ * @apiSuccess {Object[]} result.polls List of polls
+ * @apiSuccess {String} result.polls.cname Company name
+ * @apiSuccess {String} result.polls.id Poll id
+ * @apiSuccess {String[]} result.polls.options Array of options that are available as answers
+ * @apiSuccess {String} result.polls.timepost Time event was posted
+ * @apiSuccess {String} result.polls.logo Company logo url
+ * @apiSuccess {String} result.polls.title Event title
+ * @apiSuccess {Object[]} result.polls.result List of polls
+ * @apiSuccess {String} result.polls.result.option Answer option ID. Where 0 is first option from result.options array.
+ * @apiSuccess {String} result.polls.result.count Number of users that chose the option
+ * @apiSuccess {Number} result.count Number of polls
  *
  * @apiSuccessExample {json} Success-Response:
  *  HTTP/1.1 200 OK
@@ -41,15 +42,24 @@
  *      "errorCode": null,
  *      "result": {
  *                  "count": 1,
- *                  "companies": [
+ *                  "polls": [
  *                             {
- *                                  "cname": "Rook+",
- *                                  "cid": "1",
- *                                  "type": "Tech",
- *                                  "location": "East Legon, Accra Ghana",
- *                                  "bio": "Company is a tech company specialized in recruitment",
- *                                  "logo": "image URL",
- *                                  "subscribed": "1",
+ *                                  "id": "1",
+ *                                  "options": "[\"Yes\",\"No\",\"None\"]",
+ *                                  "title": "Would you buy data for Ghc10000",
+ *                                  "timepost": "2019-06-28 12:50:13",
+ *                                  "cname": "Atrossy Ltd",
+ *                                  "logo": "https://myrookery.com/img/avatar/companye9154c95a2.png",
+ *                                  "result": [
+ *                                      {
+ *                                          "option": "0",
+ *                                          "count": "2"
+ *                                      },
+ *                                      {
+ *                                           "option": "1",
+ *                                           "count": "1"
+ *                                      }
+ *                                  ]
  *                             }
  *                          ]
  *                 }
@@ -97,7 +107,7 @@ if($jwt){
         $student->apid = $decoded->data->apid;
         $student->email = $decoded->data->email;
 
-        $data = $student->getCompaniesList();
+        $data = $student->getPollsList();
 
         echo json_encode(
             array(
@@ -105,7 +115,7 @@ if($jwt){
                 "errorMessage" => null,
                 "errorCode" => null,
                 "result" => array(
-                    "companies" => $data,
+                    "polls" => $data,
                     "count" => count($data)
                 )
             )

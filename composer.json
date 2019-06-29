@@ -6,6 +6,7 @@
     "twig/twig": "^2.0",
     "symfony/twig-bridge": "^3",
     "ext-mysqli": "*",
+    "ext-mysql": "*",
     "ext-json": "*",
     "ext-pdo": "*"
   },

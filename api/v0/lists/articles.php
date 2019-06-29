@@ -8,14 +8,13 @@
 
 
 /**
- * @api {get} /lists/companies ListAllCompanies
+ * @api {get} /lists/articles ListAllArticles
  * @apiVersion 0.0.1
- * @apiName ListAllCompanies
- * @apiGroup Lists
+ * @apiName ListAllArticles
+ * @apiGroup Lists Home
  * @apiPermission none
  *
- * @apiDescription Returns the companies on the platform and the short details to populate a list. Also contains if user
- * is subscribed to the company
+ * @apiDescription Returns the articles to populate the for you section
  *
  * @apiHeader {String} x-ROOK-token User's unique jwt sent from client
  *
@@ -23,15 +22,16 @@
  * @apiSuccess {String} errorMessage Contains the error message generated
  * @apiSuccess {String} errorCode Programmable defined error messages
  * @apiSuccess {Object[]} result List of Request Output for User
- * @apiSuccess {Object[]} result.companies List of companies
- * @apiSuccess {String} result.companies.cname Company name
- * @apiSuccess {String} result.companies.type Company name
- * @apiSuccess {String} result.companies.location Company location address
- * @apiSuccess {String} result.companies.cid Company id
- * @apiSuccess {String} result.companies.bio Company short bio
- * @apiSuccess {String} result.companies.logo Company logo url
- * @apiSuccess {String="1", "0"} result.companies.subscribed Company name
- * @apiSuccess {Number} result.count Number of companies
+ * @apiSuccess {Object[]} result.articles List of Articles
+ * @apiSuccess {String} result.articles.id Article id
+ * @apiSuccess {String} result.articles.cname Company name
+ * @apiSuccess {String} result.articles.title Article title
+ * @apiSuccess {String} result.articles.views Number of people viewed article
+ * @apiSuccess {String} result.articles.link Link to article
+ * @apiSuccess {String} result.articles.timepost Time article was posted
+ * @apiSuccess {String} result.articles.logo Company logo url
+ * @apiSuccess {String} result.articles.category Category of article
+ * @apiSuccess {Number} result.count Number of articles
  *
  * @apiSuccessExample {json} Success-Response:
  *  HTTP/1.1 200 OK
@@ -41,15 +41,16 @@
  *      "errorCode": null,
  *      "result": {
  *                  "count": 1,
- *                  "companies": [
+ *                  "articles": [
  *                             {
- *                                  "cname": "Rook+",
- *                                  "cid": "1",
- *                                  "type": "Tech",
- *                                  "location": "East Legon, Accra Ghana",
- *                                  "bio": "Company is a tech company specialized in recruitment",
- *                                  "logo": "image URL",
- *                                  "subscribed": "1",
+ *                                  "id": "2",
+*                                   "views": "0",
+*                                   "link": "https://facebook.com",
+*                                   "title": "Training workshop to introduce certain skills",
+*                                   "timepost": "2019-06-28 12:11:27",
+*                                   "cname": "Rook+",
+*                                   "logo": "https://myrookery.com/img/avatar/companydfebe490a7.png",
+*                                   "category": "Design"
  *                             }
  *                          ]
  *                 }
@@ -97,7 +98,7 @@ if($jwt){
         $student->apid = $decoded->data->apid;
         $student->email = $decoded->data->email;
 
-        $data = $student->getCompaniesList();
+        $data = $student->getArticlesList();
 
         echo json_encode(
             array(
@@ -105,7 +106,7 @@ if($jwt){
                 "errorMessage" => null,
                 "errorCode" => null,
                 "result" => array(
-                    "companies" => $data,
+                    "articles" => $data,
                     "count" => count($data)
                 )
             )

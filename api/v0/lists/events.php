@@ -8,14 +8,13 @@
 
 
 /**
- * @api {get} /lists/companies ListAllCompanies
+ * @api {get} /lists/events ListAllEvents
  * @apiVersion 0.0.1
- * @apiName ListAllCompanies
- * @apiGroup Lists
+ * @apiName ListAllEvents
+ * @apiGroup Lists Home
  * @apiPermission none
  *
- * @apiDescription Returns the companies on the platform and the short details to populate a list. Also contains if user
- * is subscribed to the company
+ * @apiDescription Returns the events to populate the Home section
  *
  * @apiHeader {String} x-ROOK-token User's unique jwt sent from client
  *
@@ -23,15 +22,19 @@
  * @apiSuccess {String} errorMessage Contains the error message generated
  * @apiSuccess {String} errorCode Programmable defined error messages
  * @apiSuccess {Object[]} result List of Request Output for User
- * @apiSuccess {Object[]} result.companies List of companies
- * @apiSuccess {String} result.companies.cname Company name
- * @apiSuccess {String} result.companies.type Company name
- * @apiSuccess {String} result.companies.location Company location address
- * @apiSuccess {String} result.companies.cid Company id
- * @apiSuccess {String} result.companies.bio Company short bio
- * @apiSuccess {String} result.companies.logo Company logo url
- * @apiSuccess {String="1", "0"} result.companies.subscribed Company name
- * @apiSuccess {Number} result.count Number of companies
+ * @apiSuccess {Object[]} result.events List of events
+ * @apiSuccess {String} result.events.cname Company name
+ * @apiSuccess {String} result.events.id Event id
+ * @apiSuccess {String} result.events.image URL to image thumbnail
+ * @apiSuccess {String} result.events.price Price of the event in GHc. 0 means free
+ * @apiSuccess {String} result.events.timepost Time event was posted
+ * @apiSuccess {String} result.events.logo Company logo url
+ * @apiSuccess {String} result.events.title Event title
+ * @apiSuccess {String} result.events.category Category of event
+ * @apiSuccess {String} result.events.location Location of event
+ * @apiSuccess {String} result.events.event_date Date event is happening
+ * @apiSuccess {String} result.events.details Details about the event
+ * @apiSuccess {Number} result.count Number of events
  *
  * @apiSuccessExample {json} Success-Response:
  *  HTTP/1.1 200 OK
@@ -41,15 +44,19 @@
  *      "errorCode": null,
  *      "result": {
  *                  "count": 1,
- *                  "companies": [
+ *                  "events": [
  *                             {
- *                                  "cname": "Rook+",
- *                                  "cid": "1",
- *                                  "type": "Tech",
- *                                  "location": "East Legon, Accra Ghana",
- *                                  "bio": "Company is a tech company specialized in recruitment",
- *                                  "logo": "image URL",
- *                                  "subscribed": "1",
+ *                                  "id": "1",
+*                                   "image": "https://myrookery.com/img/sat.png",
+*                                   "price": "20",
+*                                   "title": "SAT Trial Exams",
+*                                   "timepost": "2018-06-28 12:27:19",
+*                                   "location": "Aikins Educational Consult",
+*                                   "event_date": "2019-06-28 12:27:39",
+*                                   "details": "Take the SAT diagnostic test to find your score",
+*                                   "cname": "Rook+ Artificial Intelligence",
+*                                   "logo": "https://myrookery.com/img/avatar/companyf9bd769ce9.png",
+*                                   "category": "Technology"
  *                             }
  *                          ]
  *                 }
@@ -97,7 +104,7 @@ if($jwt){
         $student->apid = $decoded->data->apid;
         $student->email = $decoded->data->email;
 
-        $data = $student->getCompaniesList();
+        $data = $student->getEventsList();
 
         echo json_encode(
             array(
@@ -105,7 +112,7 @@ if($jwt){
                 "errorMessage" => null,
                 "errorCode" => null,
                 "result" => array(
-                    "companies" => $data,
+                    "events" => $data,
                     "count" => count($data)
                 )
             )

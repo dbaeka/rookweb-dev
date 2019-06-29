@@ -1,3 +1,4 @@
+USE devel_db
 create table categories
 (
 	id int auto_increment,

@@ -8,14 +8,13 @@
 
 
 /**
- * @api {get} /lists/companies ListAllCompanies
+ * @api {get} /lists/discover ListAllDiscoveries
  * @apiVersion 0.0.1
- * @apiName ListAllCompanies
- * @apiGroup Lists
+ * @apiName ListAllDiscoveries
+ * @apiGroup Lists Home
  * @apiPermission none
  *
- * @apiDescription Returns the companies on the platform and the short details to populate a list. Also contains if user
- * is subscribed to the company
+ * @apiDescription Returns the discover items to populate the Discover section
  *
  * @apiHeader {String} x-ROOK-token User's unique jwt sent from client
  *
@@ -23,15 +22,12 @@
  * @apiSuccess {String} errorMessage Contains the error message generated
  * @apiSuccess {String} errorCode Programmable defined error messages
  * @apiSuccess {Object[]} result List of Request Output for User
- * @apiSuccess {Object[]} result.companies List of companies
- * @apiSuccess {String} result.companies.cname Company name
- * @apiSuccess {String} result.companies.type Company name
- * @apiSuccess {String} result.companies.location Company location address
- * @apiSuccess {String} result.companies.cid Company id
- * @apiSuccess {String} result.companies.bio Company short bio
- * @apiSuccess {String} result.companies.logo Company logo url
- * @apiSuccess {String="1", "0"} result.companies.subscribed Company name
- * @apiSuccess {Number} result.count Number of companies
+ * @apiSuccess {Object[]} result.discoveries List of Discoveries
+ * @apiSuccess {String} result.discoveries.id Discovery id
+ * @apiSuccess {String} result.discoveries.image_url URL to image
+ * @apiSuccess {String="task", "company", "rookie"} result.discoveries.type Type of discovery. If company then clickable to move to the company page using the target_id as CID. If task the target_id is the TID (task ID). If Rookie then no target.
+ * @apiSuccess {String} result.discoveries.target_id Target id when tapped. Can be one of CID or TID to navigate to the correct page
+ * @apiSuccess {Number} result.count Number of discoveries
  *
  * @apiSuccessExample {json} Success-Response:
  *  HTTP/1.1 200 OK
@@ -40,17 +36,20 @@
  *      "errorMessage": null,
  *      "errorCode": null,
  *      "result": {
- *                  "count": 1,
- *                  "companies": [
+ *                  "count": 2,
+ *                  "discoveries": [
  *                             {
- *                                  "cname": "Rook+",
- *                                  "cid": "1",
- *                                  "type": "Tech",
- *                                  "location": "East Legon, Accra Ghana",
- *                                  "bio": "Company is a tech company specialized in recruitment",
- *                                  "logo": "image URL",
- *                                  "subscribed": "1",
- *                             }
+ *                                  "id": "5",
+ *                                   "image_url": "https://myrookery.com/img/discover/dis2.png",
+ *                                   "type": "company",
+ *                                   "target_id": "9"
+ *                             },
+ *                             {
+ *                                  "id": "4",
+ *                                  "image_url": "https://myrookery.com/img/discover/dis3.png",
+ *                                  "type": "rookie",
+ *                                  "target_id": null
+}
  *                          ]
  *                 }
  *  }
@@ -97,7 +96,7 @@ if($jwt){
         $student->apid = $decoded->data->apid;
         $student->email = $decoded->data->email;
 
-        $data = $student->getCompaniesList();
+        $data = $student->getDiscoverList();
 
         echo json_encode(
             array(
@@ -105,7 +104,7 @@ if($jwt){
                 "errorMessage" => null,
                 "errorCode" => null,
                 "result" => array(
-                    "companies" => $data,
+                    "discoveries" => $data,
                     "count" => count($data)
                 )
             )

@@ -8,14 +8,13 @@
 
 
 /**
- * @api {get} /lists/companies ListAllCompanies
+ * @api {get} /lists/videos ListAllVideos
  * @apiVersion 0.0.1
- * @apiName ListAllCompanies
- * @apiGroup Lists
+ * @apiName ListAllVideos
+ * @apiGroup Lists Home
  * @apiPermission none
  *
- * @apiDescription Returns the companies on the platform and the short details to populate a list. Also contains if user
- * is subscribed to the company
+ * @apiDescription Returns the Videos to populate the Home section
  *
  * @apiHeader {String} x-ROOK-token User's unique jwt sent from client
  *
@@ -23,15 +22,16 @@
  * @apiSuccess {String} errorMessage Contains the error message generated
  * @apiSuccess {String} errorCode Programmable defined error messages
  * @apiSuccess {Object[]} result List of Request Output for User
- * @apiSuccess {Object[]} result.companies List of companies
- * @apiSuccess {String} result.companies.cname Company name
- * @apiSuccess {String} result.companies.type Company name
- * @apiSuccess {String} result.companies.location Company location address
- * @apiSuccess {String} result.companies.cid Company id
- * @apiSuccess {String} result.companies.bio Company short bio
- * @apiSuccess {String} result.companies.logo Company logo url
- * @apiSuccess {String="1", "0"} result.companies.subscribed Company name
- * @apiSuccess {Number} result.count Number of companies
+ * @apiSuccess {Object[]} result.videos List of videos
+ * @apiSuccess {String} result.videos.cname Company name
+ * @apiSuccess {String} result.videos.id Video id
+ * @apiSuccess {String} result.videos.link URL to video
+ * @apiSuccess {String} result.videos.views Number of video views
+ * @apiSuccess {String} result.videos.timepost Time video was posted
+ * @apiSuccess {String} result.videos.logo Company logo url
+ * @apiSuccess {String} result.videos.category Category of video
+ * @apiSuccess {String} result.videos.title Video title
+ * @apiSuccess {Number} result.count Number of events
  *
  * @apiSuccessExample {json} Success-Response:
  *  HTTP/1.1 200 OK
@@ -41,15 +41,16 @@
  *      "errorCode": null,
  *      "result": {
  *                  "count": 1,
- *                  "companies": [
+ *                  "videos": [
  *                             {
- *                                  "cname": "Rook+",
- *                                  "cid": "1",
- *                                  "type": "Tech",
- *                                  "location": "East Legon, Accra Ghana",
- *                                  "bio": "Company is a tech company specialized in recruitment",
- *                                  "logo": "image URL",
- *                                  "subscribed": "1",
+ *                                  "id": "1",
+ *                                  "views": "2",
+ *                                  "link": "https://www.youtube.com/watch?v=zfLcdBuB7NY&list=PLqtuzCJ-NAlb0mFcL9YfFlc3XHivFPzl8&index=15",
+ *                                  "title": "Career talk about the positions available at the company",
+ *                                  "timepost": "2019-06-29 06:36:32",
+ *                                  "cname": "Rook+ Medical Centre",
+ *                                  "logo": "https://myrookery.com/img/avatar/companybf208186f1.png",
+ *                                  "category": "Technology"
  *                             }
  *                          ]
  *                 }
@@ -67,6 +68,7 @@
  *       "result": null
  *     }
  */
+
 
 header("Access-Control-Allow-Origin: http://localhost:8080/api/");
 header("Content-Type: application/json; charset=UTF-8");
@@ -97,7 +99,7 @@ if($jwt){
         $student->apid = $decoded->data->apid;
         $student->email = $decoded->data->email;
 
-        $data = $student->getCompaniesList();
+        $data = $student->getVideosList();
 
         echo json_encode(
             array(
@@ -105,7 +107,7 @@ if($jwt){
                 "errorMessage" => null,
                 "errorCode" => null,
                 "result" => array(
-                    "companies" => $data,
+                    "videos" => $data,
                     "count" => count($data)
                 )
             )
