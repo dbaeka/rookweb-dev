@@ -6,7 +6,9 @@
     "twig/twig": "^2.0",
     "symfony/twig-bridge": "^3",
     "ext-mysqli": "*",
-    "ext-json": "*"
+    "ext-mysql": "*",
+    "ext-json": "*",
+    "ext-pdo": "*"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"

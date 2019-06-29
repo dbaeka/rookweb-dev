@@ -27,6 +27,7 @@
  * @apiSuccess {String} result.companies.cname Company name
  * @apiSuccess {String} result.companies.type Company name
  * @apiSuccess {String} result.companies.location Company location address
+ * @apiSuccess {String} result.companies.cid Company id
  * @apiSuccess {String} result.companies.bio Company short bio
  * @apiSuccess {String} result.companies.logo Company logo url
  * @apiSuccess {String="1", "0"} result.companies.subscribed Company name
@@ -43,6 +44,7 @@
  *                  "companies": [
  *                             {
  *                                  "cname": "Rook+",
+ *                                  "cid": "1",
  *                                  "type": "Tech",
  *                                  "location": "East Legon, Accra Ghana",
  *                                  "bio": "Company is a tech company specialized in recruitment",
