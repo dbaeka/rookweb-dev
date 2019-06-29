@@ -455,7 +455,7 @@ WHERE company.active = '1' ORDER BY events.timepost DESC ";
 
     public function getPollsList()
     {
-        $query = "SELECT polls.id, json_unquote(polls.options) as options, polls.title, polls.timepost, company.cname, concat('" . $this->base_url .
+        $query = "SELECT polls.id, polls.options as options, polls.title, polls.timepost, company.cname, concat('" . $this->base_url .
             "','/img/avatar/',company.logo) as logo FROM polls INNER JOIN company
    ON company.cid = polls.company_id WHERE company.active = '1' AND polls.status = '1' ORDER BY polls.timepost DESC";
         $stmt = $this->conn->prepare($query);
