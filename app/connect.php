@@ -18,11 +18,11 @@ if ($environment == "DEVELOPMENT"){
     $database["db_name"] =  "myrooker_develDB";
 } else {
 //Get Heroku ClearDB connection information
-   // $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $database["host"] = "localhost:3306";//$cleardb_url["host"];
-    $database["username"] = "rook_dev";//$cleardb_url["user"];
-    $database["password"] = "rookDevel@123";//$cleardb_url["pass"];
-    $database["db_name"] =  "devel_db";//substr($cleardb_url["path"], 1);
+    $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $database["host"] = $cleardb_url["host"];
+    $database["username"] = $cleardb_url["user"];
+    $database["password"] = $cleardb_url["pass"];
+    $database["db_name"] =  substr($cleardb_url["path"], 1);
 }
 
 $help = '<script type="text/javascript">
